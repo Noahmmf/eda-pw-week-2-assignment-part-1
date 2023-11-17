@@ -136,31 +136,29 @@ console.log (mostPets)
 let luckyResult;
 
 switch (luckyResult) {
-    case (1):
-    console.log( 'First is the worst ' );
-    break
+    case 1 : 
+     luckyResult = 'First is the worst '
+    break;
 
-    case (2):
-    console.log( 'Second is the best' );
-    break
+    case 2 :
+    luckyResult = 'Second is the best'
+    break;
 
-    case (3):
-      console.log( 'Third is the one with the palka dot dress ' );
-    break
+    case 3 :
+      luckyResult = 'Third is the one with the palka dot dress '
+    break;
 
   default: 
-    console.log( 'luck is what happens when preperation meets opportunity ' );
+    luckyResult = 'luck is what happens when preperation meets opportunity '
 }
+
+
 
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
 
+result = adventurous === true ? 'Adventures are great!' : 'How about we stay home?'
 
-
-
-
-
-
-
+console.log( result );
 
 
 
