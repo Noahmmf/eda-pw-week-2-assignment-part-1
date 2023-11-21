@@ -1,130 +1,129 @@
 // REQUIRED FEATURES:
 // 1 - Create a variable called `firstName` and assign it the value of your first name
-let firstName = 'Noah ';
+let firstName = "Noah ";
 // 2 - Create a second variable called `lastName` and assign it the value of your last name
-let lastName = 'Fuglestad ';
+let lastName = "Fuglestad ";
 
 // 3 - Create a third variable called `fullName`, assign it the value of your first and last name
 //     (remember, you already have variables for this, can you use those?)
 //     Console log the value of `fullName`
 let fullName = firstName + lastName;
-console.log( 'My full name is', fullName ); 
+console.log("My full name is", fullName);
 
 // 4 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 //     Console log the value of `luckyNumber`
-let luckyNumber= 3;
-console.log( 'My lucky number is: ' + luckyNumber);
+let luckyNumber = 3;
+console.log("My lucky number is: " + luckyNumber);
 
 // 5 - Create a variable `introduction` and using the variables from above,
 //     give it the value of:
 //     'My name is (full name), and I think (lucky number) is a winner!'.
 //     Refer back to the videos if you need help with this one.
 //     Console log the value of `introduction`
-let introduction = (' My name is ' + fullName + ', and I think ' + luckyNumber + ' is a winner! ');
-console.log( introduction )
+let introduction =
+  " My name is " + fullName + ", and I think " + luckyNumber + " is a winner! ";
+console.log(introduction);
 
 // 6 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 //     Console log the value of `adventurous`
 let adventurous = true;
-console.log( 'I am adventurous: ' + adventurous );
+console.log("I am adventurous: " + adventurous);
 
 // 7 - Create a variable named `food`, and set its value to a string of your favorite food
 //     Console log the value of `food`
-let food = 'Yellow curry';
-console.log( 'My favorite food is: ' + food );
+let food = "Yellow curry";
+console.log("My favorite food is: " + food);
 
 // 8 - Create a variable called `pets` and set it to the value of the number of pets you have
 //     Console log the value of `pets`
 let pets = 1;
 let totalPets = pets;
-console.log( 'Total of my pets: ' + totalPets );
-console.log( pets );
+console.log("Total of my pets: " + totalPets);
+console.log(pets);
 
 // 9 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
 let friendsPets = 4;
 let totalFriendsPets = friendsPets;
-console.log( 'Total friends pets: ' + totalFriendsPets);
+console.log("Total friends pets: " + totalFriendsPets);
 
 // 10 - Add two pets to your `pets` variable
 pets += 2;
 totalPets = pets;
-console.log( 'I just got 2 new pets. The new total of my pets is: ' + totalPets );
+console.log("I just got 2 new pets. The new total of my pets is: " + totalPets);
 
 // 11 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 const allowedPets = 8;
 
 // 12 - Create a variable called `result`. Create a conditional:
-//      if adventurous is true, set `result` to be "Adventures are great!", 
+//      if adventurous is true, set `result` to be "Adventures are great!",
 //      if it's not true,  set `result` to be "How about we stay home?"
 //      Console log the value of `result`
 let result;
 
-if(adventurous) {
-  result =  'Adventures are great!';
-}
-else{
-  result =  'How about we stay home?';
+if (adventurous) {
+  result = "Adventures are great!";
+} else {
+  result = "How about we stay home?";
 }
 
-console.log( result );
+console.log(result);
 
 // 13 - Create a variable called `diceRoll` and set it to the value of "Try again later.".
-//      Create a compound conditional: 
+//      Create a compound conditional:
 //      if luckyNumber is 2 and adventurous is true,
 //      set `diceRoll` to be "Roll the dice!"
 //      Console log the value of `diceRoll`
-let diceRoll = 'Try again later.';
+let diceRoll = "Try again later.";
 
-if( luckyNumber === 7 && adventurous === true); {
-  console.log( 'Roll that dice!' );
+if (luckyNumber === 7 && adventurous === true);
+{
+  console.log("Roll that dice!");
 }
-console.log( diceRoll );
+console.log(diceRoll);
 
-// 14 - Create a variable called `petStatus`. 
+// 14 - Create a variable called `petStatus`.
 //      Write a conditional that covers the following:
 //      if the value of `pets` is less than the value of `allowedPets`,
-//      set `petStatus` to the value of "I can have more pets" 
+//      set `petStatus` to the value of "I can have more pets"
 //      if the value of `pets` is equal to the value of `allowedPets`,
-//      set `petStatus` to the value of "I have enough pets" 
+//      set `petStatus` to the value of "I have enough pets"
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
 let petStatus;
 
-if( pets < allowedPets){
-  petStatus= 'I can have more pets';
+if (pets < allowedPets) {
+  petStatus = "I can have more pets";
 }
 
-if(pets === allowedPets){
-  petStatus = 'I have enough pets';
+if (pets === allowedPets) {
+  petStatus = "I have enough pets";
 }
 
-if(pets > allowedPets){
-  petStatus = 'oh no, I have too many pets!';
+if (pets > allowedPets) {
+  petStatus = "oh no, I have too many pets!";
 }
-console.log( petStatus );
+console.log(petStatus);
 
 // STRETCH GOALS:
 
 // 15 - Make a variable called `mostPets` and a conditional that
 //      correctly checks the `pets` and `friendsPets` variables, and
 //      assigns the highest value to `mostPets`. There's several possibilities --
-//      be sure to think through all the scenarios. 
+//      be sure to think through all the scenarios.
 //      console.log `mostPets` after the conditional has run.
 let mostPets;
-console.log( 'I have this many pets: ', pets );
+console.log("I have this many pets: ", pets);
 
-console.log( 'My friend has this many pets: ', friendsPets);
+console.log("My friend has this many pets: ", friendsPets);
 
-if(pets > friendsPets){
-   mostPets= pets;
-   console.log( 'I am a superior being ' );
-}
-else if(pets < friendsPets){
+if (pets > friendsPets) {
+  mostPets = pets;
+  console.log("I am a superior being ");
+} else if (pets < friendsPets) {
   mostPets = friendsPets;
-  console.log( 'My friends have more pets than me.' );
+  console.log("My friends have more pets than me.");
 }
-console.log (mostPets)
-
+console.log(mostPets);
 
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
@@ -151,35 +150,35 @@ switch (luckyNumber) {
     luckyResult = "Luck is what happens when preparation meets opportunity";
 }
 
-console.log( luckyResult );
+console.log(luckyResult);
 
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
 
-result = adventurous === true ? 'Adventures are great!' : 'How about we stay home?'
+result =
+  adventurous === true ? "Adventures are great!" : "How about we stay home?";
 
-console.log( result );
-
-
+console.log(result);
 
 // DO NOT MODIFY
 // Used for automated testing
 try {
   module.exports = {
-    firstName: typeof firstName !== 'undefined' ? firstName : undefined,
-    lastName: typeof lastName !== 'undefined' ? lastName : undefined,
-    fullName: typeof fullName !== 'undefined' ? fullName : undefined,
-    luckyNumber: typeof luckyNumber !== 'undefined' ? luckyNumber : undefined,
-    introduction: typeof introduction !== 'undefined' ? introduction : undefined,
-    adventurous: typeof adventurous !== 'undefined' ? adventurous : undefined,
-    food: typeof food !== 'undefined' ? food : undefined,
-    pets: typeof pets !== 'undefined' ? pets : undefined,
-    friendsPets: typeof friendsPets !== 'undefined' ? friendsPets : undefined,
-    allowedPets: typeof allowedPets !== 'undefined' ? allowedPets : undefined,
-    result: typeof result !== 'undefined' ? result : undefined,
-    diceRoll: typeof diceRoll !== 'undefined' ? diceRoll : undefined,
-    petStatus: typeof petStatus !== 'undefined' ? petStatus : undefined,
-    mostPets: typeof mostPets !== 'undefined' ? mostPets : undefined,
-    luckyResult: typeof luckyResult !== 'undefined' ? luckyResult : undefined,
+    firstName: typeof firstName !== "undefined" ? firstName : undefined,
+    lastName: typeof lastName !== "undefined" ? lastName : undefined,
+    fullName: typeof fullName !== "undefined" ? fullName : undefined,
+    luckyNumber: typeof luckyNumber !== "undefined" ? luckyNumber : undefined,
+    introduction:
+      typeof introduction !== "undefined" ? introduction : undefined,
+    adventurous: typeof adventurous !== "undefined" ? adventurous : undefined,
+    food: typeof food !== "undefined" ? food : undefined,
+    pets: typeof pets !== "undefined" ? pets : undefined,
+    friendsPets: typeof friendsPets !== "undefined" ? friendsPets : undefined,
+    allowedPets: typeof allowedPets !== "undefined" ? allowedPets : undefined,
+    result: typeof result !== "undefined" ? result : undefined,
+    diceRoll: typeof diceRoll !== "undefined" ? diceRoll : undefined,
+    petStatus: typeof petStatus !== "undefined" ? petStatus : undefined,
+    mostPets: typeof mostPets !== "undefined" ? mostPets : undefined,
+    luckyResult: typeof luckyResult !== "undefined" ? luckyResult : undefined,
   };
 } catch (e) {
   // Do nothing
