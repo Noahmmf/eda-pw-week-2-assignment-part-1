@@ -1,14 +1,14 @@
 // REQUIRED FEATURES:
 // 1 - Create a variable called `firstName` and assign it the value of your first name
-let firstName = ' Noah ';
+let firstName = 'Noah ';
 // 2 - Create a second variable called `lastName` and assign it the value of your last name
-let lastName = ' Fuglestad ';
+let lastName = 'Fuglestad ';
 
 // 3 - Create a third variable called `fullName`, assign it the value of your first and last name
 //     (remember, you already have variables for this, can you use those?)
 //     Console log the value of `fullName`
 let fullName = firstName + lastName;
-console.log( 'My full name is: ' + fullName ); 
+console.log( 'My full name is', fullName ); 
 
 // 4 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 //     Console log the value of `luckyNumber`
@@ -57,14 +57,15 @@ const allowedPets = 8;
 //      if adventurous is true, set `result` to be "Adventures are great!", 
 //      if it's not true,  set `result` to be "How about we stay home?"
 //      Console log the value of `result`
-let result = adventurous; 
+let result;
 
-if(adventurous === true) {
+if(adventurous) {
   result =  'Adventures are great!';
 }
 else{
   result =  'How about we stay home?';
 }
+
 console.log( result );
 
 // 13 - Create a variable called `diceRoll` and set it to the value of "Try again later.".
@@ -87,18 +88,18 @@ console.log( diceRoll );
 //      set `petStatus` to the value of "I have enough pets" 
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
-let petStatus = pets;
+let petStatus;
 
 if( pets < allowedPets){
-  petStatus= 'I can have more pets'
+  petStatus= 'I can have more pets';
 }
 
 if(pets === allowedPets){
-  petStatus = 'I have enough pets'
+  petStatus = 'I have enough pets';
 }
 
 if(pets > allowedPets){
-  petStatus = 'oh no, I have too many pets!'
+  petStatus = 'oh no, I have too many pets!';
 }
 console.log( petStatus );
 
